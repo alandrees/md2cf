@@ -31,6 +31,8 @@ Deployment
 ### Setup the configuration file
 Follow the `confluence.example.conf` and set up your credentials/URL.
 
+It should be copied to your home directory: `~/.confluence`
+
 You can generate a token by following the instructions found here:
 https://confluence.atlassian.com/cloud/api-tokens-938839638.html
 
