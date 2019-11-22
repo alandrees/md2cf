@@ -33,7 +33,7 @@ def load_creds(creds_path: str) -> dict:
     directory
     """
     with open(creds_path) as config:
-        creds = yaml.load(config)
+        creds = yaml.load(config, Loader=yaml.BaseLoader)
 
     return creds
 
