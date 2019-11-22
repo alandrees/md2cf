@@ -7,8 +7,9 @@ confluence (where you specified with page and space).
 Dependencies
 ------------
 ### System
-- python3
-- confluence cloud API
+- Python 3.5+
+- Confluence Cloud API
+- Virtualenv
 
 ### Software
 - requests
@@ -17,11 +18,27 @@ Dependencies
 
 Development
 -----------
-TODO:
+You can setup a personal space on your confluence account and use that as your
+space.  It will start with a `~`
+
+Deployment
+----------
+### Setup the python envrionment
+1. `virtualenv .venv`
+2. `source .venv/bin/activate`
+3. `python3 -mpip install -r requirements.txt`
+
+### Setup the configuration file
+Follow the `confluence.example.conf` and set up your credentials/URL.
+
+You can generate a token by following the instructions found here:
+https://confluence.atlassian.com/cloud/api-tokens-938839638.html
+
+That token will be the `key` field in the config.
 
 Usage
 -----
-TODO:
+`python3 <parentpage> <space> <markdown_path>`
 
 Testing
 -------
